@@ -58,7 +58,7 @@ weight = 3
 name = "RSS"
 icon = "fas fa-rss"
 weight = 4
-url = "https://github.com/adrianduan/adrianduan.github.io/blob/master/index.xml"
+url = "https://raw.githubusercontent.com/AdrianDuan/adrianduan.github.io/master/index.xml"
 rel = "alternate"
 type = "application/rss+xml"
 # [[params.social]]
