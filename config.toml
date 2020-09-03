@@ -1,4 +1,83 @@
 baseURL = "https://adrianduan.github.io/"
+defaultcontentlanguage = "en"
 languageCode = "en-us"
-title = "Adrian's Blog"
 theme = "hugo-coder"
+title = "Adrian's Blog"
+
+canonifyurls = true
+paginate = 20
+
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+pygmentsstyle = "monokai"
+
+# disqusShortname = "yourdiscussshortname"
+
+[params]
+author = "Adrian Duan"
+avatarurl = "https://avatars0.githubusercontent.com/u/26034046?s=460&u=34d039009d0e8cc0fb02f0a6a1fbe40de1c1920c&v=4"
+description = "Adrian Duan's personal website"
+info = "Software Engineer"
+keywords = "blog,developer,personal"
+
+favicon_16 = "/img/favicon-16x16.png"
+favicon_32 = "/img/favicon-32x32.png"
+
+# footercontent = "Powered by Hugo"
+
+hideCopyright = false
+hideCredits = true
+
+colorscheme = "auto"
+custom_css = []
+custom_js = []
+enableTwemoji = true
+math = true
+rtl = false
+
+# Social links
+[[params.social]]
+icon = "fab fa-github"
+name = "Github"
+url = "https://github.com/adrianduan/"
+weight = 1
+
+[[params.social]]
+icon = "fas fa-envelope"
+name = "Email"
+url = "mailto:adrian.duanjing@gmail.com"
+weight = 2
+
+[[params.social]]
+icon = "fab fa-telegram-plane"
+name = "Telegram"
+url = "https://t.me/adrian_duanjing"
+weight = 3
+
+[[params.social]]
+name = "RSS"
+icon = "fas fa-rss"
+weight = 4
+url = "https://github.com/adrianduan/adrianduan.github.io/blob/master/index.xml"
+rel = "alternate"
+type = "application/rss+xml"
+# [[params.social]]
+# icon = "fab fa-gitlab fa-2x"
+# name = "Gitlab"
+# url = "https://gitlab.com/johndoe/"
+# weight = 2
+# [[params.social]]
+# icon = "fab fa-twitter fa-2x"
+# name = "Twitter"
+# url = "https://twitter.com/johndoe/"
+# weight = 3
+
+# Menu links
+[[menu.main]]
+name = "Blog"
+url = "/posts/"
+weight = 1
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 2
