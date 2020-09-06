@@ -1,15 +1,10 @@
 baseURL = "https://adrianduan.github.io/"
-defaultcontentlanguage = "en"
-languageCode = "en-us"
 theme = "hugo-coder"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
 title = "Adrian's Blog"
-
 canonifyurls = true
 paginate = 20
-
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
-pygmentsstyle = "monokai"
 
 # disqusShortname = "yourdiscussshortname"
 
@@ -19,19 +14,15 @@ avatarurl = "https://avatars0.githubusercontent.com/u/26034046?s=460&u=34d039009
 description = "Adrian Duan's personal website"
 info = "Software Engineer"
 keywords = "blog,developer,personal"
-
 favicon_16 = "/img/favicon-16x16.png"
 favicon_32 = "/img/favicon-32x32.png"
-
-# footercontent = "Powered by Hugo"
-
 hideCopyright = false
 hideCredits = true
-
-colorscheme = "auto"
+colorScheme = "auto"
 custom_css = []
 custom_js = []
-enableTwemoji = true
+enableEmoji = true
+enableTwemoji = false
 math = true
 rtl = false
 
@@ -58,26 +49,43 @@ weight = 3
 name = "RSS"
 icon = "fas fa-rss"
 weight = 4
-url = "https://raw.githubusercontent.com/AdrianDuan/adrianduan.github.io/master/index.xml"
+url = "https://adrianduan.github.io/index.xml"
 rel = "alternate"
 type = "application/rss+xml"
-# [[params.social]]
-# icon = "fab fa-gitlab fa-2x"
-# name = "Gitlab"
-# url = "https://gitlab.com/johndoe/"
-# weight = 2
-# [[params.social]]
-# icon = "fab fa-twitter fa-2x"
-# name = "Twitter"
-# url = "https://twitter.com/johndoe/"
-# weight = 3
 
-# Menu links
-[[menu.main]]
+[markup]
+[markup.highlight]
+lineNos = true
+lineNumbersInTable = true
+style = "monokai"
+
+[languages]
+[languages.en]
+languagename = "🇺🇸"
+[languages.en.params]
+footerContent = "All content on this website is licensed under a <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en'>CC BY-NC-SA 4.0</a> International License"
+dateFormat = "Jan. 2, 2006"
+[languages.en.menu]
+[[languages.en.menu.main]]
 name = "Blog"
-url = "/posts/"
 weight = 1
-[[menu.main]]
+url = "posts/"
+[[languages.en.menu.main]]
 name = "About"
-url = "/about/"
 weight = 2
+url = "about/"
+
+[languages.zh-cn]
+languagename = "🇨🇳"
+[languages.zh-cn.params]
+footerContent = "本站的所有内容采用<a href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh'>CC BY-NC-SA 4.0</a>国际许可协议进行许可"
+dateFormat = "2006年01月02日"
+[languages.zh-cn.menu]
+[[languages.zh-cn.menu.main]]
+name = "文章"
+weight = 1
+url = "posts/"
+[[languages.zh-cn.menu.main]]
+name = "关于"
+weight = 2
+url = "about/"

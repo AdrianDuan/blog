@@ -1,0 +1,5 @@
+[posts]
+other = "所有文章"
+
+[reading_time]
+other = "预计读完全文需要 {{ .Count }} 分钟"
