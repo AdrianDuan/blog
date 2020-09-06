@@ -1,7 +1,7 @@
 baseURL = "https://adrianduan.github.io/"
 theme = "hugo-coder"
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
+# defaultContentLanguageInSubdir = true
 title = "Adrian's Blog"
 canonifyurls = true
 paginate = 20
